@@ -1,14 +1,13 @@
+"use strict";
 const express = require("express");
-
 const app = express();
 const PORT = 8080;
 app.get("/", (req, res) => {
-  res.send("Hello World");
+    res.send("Hello World");
 });
 app.get("/user", (req, res) => {
-  res.send("Hello To Duc");
+    res.send("Hello To Duc");
 });
-
 app.listen(PORT, () => {
-  console.log(`Running at http://localhost:${PORT}`);
+    console.log(`Running at http://localhost:${PORT}`);
 });
